@@ -1,0 +1,8 @@
+flask
+flask_sqlalchemy
+pandas
+pandas_ta
+yfinance
+apscheduler
+python-dotenv
+python-telegram-bot

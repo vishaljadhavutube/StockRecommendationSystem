@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><title>Recommendations</title></head>
+<body>
+    <h1>Today's Recommendations</h1>
+    <table border="1">
+        <tr><th>Symbol</th><th>Entry</th><th>Target</th><th>Days</th><th>Score</th></tr>
+        {% for rec in recommendations %}
+        <tr>
+            <td>{{ rec.symbol }}</td>
+            <td>{{ rec.entry_price }}</td>
+            <td>{{ rec.target_price }}</td>
+            <td>{{ rec.holding_days }}</td>
+            <td>{{ rec.confidence_score }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
